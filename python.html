@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Python Basics</h1>
+<input type="text" id="searchInput" placeholder="Search in Python notes..." onkeyup="searchNotes()">
+
+
+<h2>What is Python?</h2>
+<p>Python ek high-level programming language hai jo simple aur readable hai.</p>
+
+<h2>First Program</h2>
+<pre>
+print("Hello Python")
+</pre>
+
+<h2>Variables</h2>
+<pre>
+name = "Mukesh"
+age = 20
+price = 99.5
+</pre>
+
+<h2>Input Example</h2>
+<pre>
+age = int(input("Enter age: "))
+print(age)
+</pre>
+
+<h2>Common Mistakes</h2>
+<ul>
+    <li>Input ko int me convert na karna</li>
+    <li>Quotes bhool jana</li>
+    <li>Wrong variable names</li>
+</ul>
+
+<h2>Practice Questions</h2>
+<ol>
+    <li>Name aur age input lo</li>
+    <li>2 numbers ka sum nikalo</li>
+    <li>Input ka type check karo</li>
+</ol>
+
+
+</div>
+<script>
+function searchNotes() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let content = document.getElementById("content");
+    let text = content.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Linux Basics</h1>
+
+<h2>What is Linux?</h2>
+<p>Linux ek open-source operating system hai jo servers aur developers use karte hain.</p>
+
+<h2>Basic Commands</h2>
+<pre>
+pwd     # current directory
+ls      # list files
+cd      # change directory
+mkdir   # create folder
+rm      # delete file
+</pre>
+
+<h2>Example</h2>
+<pre>
+mkdir projects
+cd projects
+</pre>
+
+<h2>Practice Questions</h2>
+<ol>
+    <li>Folder kaise banate hain?</li>
+    <li>File delete ka command kya hai?</li>
+    <li>Current directory kaise check karte hain?</li>
+</ol>
+
+<a href="index.html" class="btn">Home</a>
+<script>
+function searchNotes() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let content = document.getElementById("content");
+    let text = content.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>
